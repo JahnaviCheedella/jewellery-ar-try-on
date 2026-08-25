@@ -1,6 +1,7 @@
 from decimal import Decimal
-from app.database import Base, SessionLocal, engine
-from app.models import Category, Jewellery
+from database import Base, SessionLocal, engine
+# pyrefly: ignore [missing-import]
+from models import Category, Jewellery
 
 Base.metadata.create_all(bind=engine)
 

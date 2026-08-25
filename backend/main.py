@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .config import settings
-from .database import Base, engine
-from .routers import analytics, categories, jewellery
+from config import settings
+from database import Base, engine
+# pyrefly: ignore [missing-import]
+from routers import analytics, categories, jewellery
 
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Nandi Jewellers AR API", version="1.0.0")
 
