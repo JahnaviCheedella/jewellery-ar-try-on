@@ -2,7 +2,7 @@ from datetime import datetime
 from decimal import Decimal
 from sqlalchemy import Boolean, DateTime, Integer, Numeric, String, Text
 from sqlalchemy.orm import Mapped, mapped_column
-from ..database import Base
+from database import Base
 
 
 class Jewellery(Base):

@@ -1,7 +1,6 @@
 from sqlalchemy.orm import Session
-
-from ..models.analytics import AnalyticsEvent
-from ..schemas.analytics import AnalyticsEventIn
+from models.analytics import AnalyticsEvent
+from schemas.analytics import AnalyticsEventIn
 
 
 def create_event(db: Session, payload: AnalyticsEventIn):

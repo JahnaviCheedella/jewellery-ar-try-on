@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from ..database import get_db
-from ..schemas.jewellery import JewelleryOut
-from ..services.jewellery_service import get_jewellery, list_jewellery
+from database import get_db
+from schemas.jewellery import JewelleryOut
+from services.jewellery_service import get_jewellery, list_jewellery
 
 router = APIRouter(prefix="/api/jewellery", tags=["jewellery"])
 

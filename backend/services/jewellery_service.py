@@ -1,6 +1,6 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from ..models.jewellery import Jewellery
+from models.jewellery import Jewellery
 
 
 def list_jewellery(db: Session, category: str | None = None):

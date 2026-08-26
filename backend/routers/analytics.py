@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from ..database import get_db
-from ..schemas.analytics import AnalyticsEventIn, AnalyticsEventOut
-from ..services.analytics_service import create_event
+from database import get_db
+from schemas.analytics import AnalyticsEventIn, AnalyticsEventOut
+from services.analytics_service import create_event
 
 router = APIRouter(prefix="/api/analytics", tags=["analytics"])
 
